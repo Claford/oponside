@@ -105,8 +105,8 @@ echo -e "Admin Pass: \033[1;33madmin\033[0m"
 echo ""
 echo -e "Change the password when logging into the panel"
 echo ""
-echo ""
 echo -e " ####### All right reserved @2020| ClayFord #######"
+echo ""
 cat /dev/null > ~/.bash_history && history -c
 rm -f wget-log*
 rm clefford.sh
