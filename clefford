@@ -15,8 +15,8 @@ mysql -u root -p"$pwdroot" -e "CREATE USER 'plus'@'localhost';'"
 mysql -u root -p"$pwdroot" -e "CREATE DATABASE plus;"
 mysql -u root -p"$pwdroot" -e "GRANT ALL PRIVILEGES ON plus.* To 'plus'@'localhost' IDENTIFIED BY '$pwdroot';"
 mysql -u root -p"$pwdroot" -e "FLUSH PRIVILEGES"
-echo "[mysqld]
-max_connections = 900" >> /etc/mysql/my.cnf
+echo '[mysqld]
+max_connections = 900' >> /etc/mysql/my.cnf
 apt-get install php-mysql -y > /dev/null 2>&1
 phpenmod mcrypt
 systemctl restart apache2
