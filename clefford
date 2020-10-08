@@ -27,13 +27,13 @@ curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 chmod +x /usr/local/bin/composer
 cd /var/www/html
-wget https://www.dropbox.com/s/0diajna7jiqv31v/v23.zip > /dev/null 2>&1
+wget https://www.dropbox.com/s/6ajpzqmxc5tm19a/clay.zip > /dev/null 2>&1
 apt-get install unzip > /dev/null 2>&1
-unzip v23.zip > /dev/null 2>&1
+unzip clay.zip > /dev/null 2>&1
 chmod -R 777 /var/www/html/admin
 chmod -R 777 /var/www/html/pages
 chmod -R 777 /var/www/html/backups
-rm v23.zip index.html > /dev/null 2>&1
+rm clay.zip index.html > /dev/null 2>&1
 composer install
 composer require phpseclib/phpseclib:~2.0
 systemctl restart mysql
